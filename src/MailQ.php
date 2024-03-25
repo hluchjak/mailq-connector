@@ -62,7 +62,7 @@ class MailQ
 
         $httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
         if ($response === false || $httpcode != 201) {
-            throw new MailQException('Curl error: ' . curl_error($ch));
+            throw new MailQException('Curl error: ' . curl_error($ch) . ' ' . $httpcode);
         }
         return $response;
     }
