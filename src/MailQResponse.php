@@ -6,7 +6,7 @@ namespace LamaHive\MailqConnector;
 
 class MailQResponse
 {
-    public readonly int $id;
+    public readonly string $id;
     public readonly string $recipientEmail;
     public readonly string $created;
     public readonly string $replyToEmail;
